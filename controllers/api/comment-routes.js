@@ -16,6 +16,7 @@ router.get('/', (req, res) => {
 // Create a comment
 // withAuth make sures that the user is logged in before they can create a comment
 router.post('/', withAuth, (req, res) => {
+  // Expect req.body to have comment_text and post_id
   Comment.create({
     comment_text: req.body.comment_text,
     user_id: req.session.user_id,
@@ -31,6 +32,7 @@ router.post('/', withAuth, (req, res) => {
 // Update a comment
 // withAuth make sures that the user is logged in before they can update a comment
 router.put('/:id', withAuth, (req, res) => {
+  // Expect req.body to have comment_text
   Comment.update(
     {
       comment_text: req.body.comment_text

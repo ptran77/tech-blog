@@ -44,8 +44,8 @@ router.get('/:id', (req, res) => {
     },
     attributes: [
       'id',
-      'post_url',
       'title',
+      'content',
       'created_at',
     ],
     // include all comments made in response to the post and the user that made the post
@@ -80,6 +80,7 @@ router.get('/:id', (req, res) => {
 // Creates a new post
 // withAuth makes sure that the user is logged in before they can make a post
 router.post('/', withAuth, (req, res) => {
+  // Expect req.body to have title, content, and user_id
   Post.create({
     title: req.body.title,
     content: req.body.content,
@@ -95,6 +96,7 @@ router.post('/', withAuth, (req, res) => {
 // Update a post
 // withAuth makes sure that the user is logged in before they can update a post
 router.put('/:id', withAuth, (req, res) => {
+  // Expect req.body to have title and content
   Post.update(
     {
       title: req.body.title,
