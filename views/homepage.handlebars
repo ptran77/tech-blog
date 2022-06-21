@@ -1,7 +1,9 @@
-<ol class="post-list">
+<section class="post-list">
+  <!-- Loop to get each of the post -->
   {{#each posts as |post|}}
-  <li>
+  <div>
+    <!-- Getting post html with post-info.handlebars -->
     {{> post-info post }}
-  </li>
+  </div>
   {{/each}}
-</ol>
+</section>

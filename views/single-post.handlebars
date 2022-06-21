@@ -1,0 +1,18 @@
+<!-- Get Post Information with post-info.handlebars -->
+{{> post-info post}}
+
+<!-- If there a user logged in, then render the comment-form -->
+{{#if loggedIn}}
+<form class="comment-form">
+  <h2>Comment</h2>
+  <div>
+    <textarea name="comment-body"></textarea>
+  </div>
+  <div>
+    <button type="submit">Submit</button>
+  </div>
+</form>
+{{/if}}
+
+<!-- Show all the comments that already exist -->
+{{> comments post.comments}}
