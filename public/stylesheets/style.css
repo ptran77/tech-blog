@@ -1,0 +1,80 @@
+:root {
+  --primary-color: #231010;
+  --secondary-color: #d9ead3;
+  --tertiary-color: #a7a7a7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  background-color: var(--secondary-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  padding: 30px 40px 10px 40px;
+}
+
+header a, header button {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: large;
+  transition: color .1s;
+  padding: 1%;
+}
+
+header a:hover, header button:hover {
+  color: var(--tertiary-color);
+}
+
+header h1 {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 1%;
+  width: fit-content;
+  font-weight: bold;
+  font-size: 2.5em;
+  border-radius: 15px;
+  box-shadow: 5px 5px var(--tertiary-color);
+}
+
+main {
+  flex: 1;
+  padding: 2% 4%;
+}
+
+.post-list {
+  list-style-type: none;
+}
+
+.post {
+  margin-bottom: 2%;
+  border: 5px solid var(--primary-color);
+}
+
+.post-header {
+  display: flex;
+  background-color: var(--primary-color);
+  padding: 1%;
+  color: var(--tertiary-color);
+  font-size: 1.5em;
+  justify-content: space-between;
+}
+
+.post-header a {
+  text-decoration: none;
+  color: var(--tertiary-color);
+  font-weight: bold;
+}
+
+.post-content {
+  padding: 1%;
+  color: var(--primary-color);
+  font-size: 1.5em;
+}
