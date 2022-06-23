@@ -216,3 +216,47 @@ main {
   border-radius: 25px;
 }
 /* Dashboard Style End */
+
+/* Edit Post Style Begin */
+.edit-post-form {
+  border: 5px solid var(--primary-color);
+  margin-bottom: .5%;
+}
+
+.edit-post-form div {
+  padding: 0 1% 1% 1%;
+}
+
+.edit-post-form div p{
+  display: block;
+  font-size: 1.25em;
+  font-weight: bold
+}
+
+#edit-post-title, #edit-post-content {
+  width: 100%;
+  font-size: 1.2em;
+}
+
+#edit-post-content {
+  min-height: 100px;
+}
+
+#update-post, #delete-post{
+  width: 100%;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--secondary-color);
+  border-radius: 5px;
+}
+
+#update-post {
+  background-color: var(--primary-color);
+  margin-bottom: 0.2%
+}
+
+#delete-post {
+  background-color: var(--tertiary-color);
+}
+
+/* Edit Post Style End */
