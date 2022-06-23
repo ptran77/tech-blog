@@ -16,3 +16,8 @@
 
 <!-- Show all the comments that already exist -->
 {{> comments post.comments}}
+
+<!-- Logged in user, use script -->
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+{{/if}}
