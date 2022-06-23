@@ -22,6 +22,8 @@ header {
 }
 
 header a, header button {
+  background-color: var(--primary-color);
+  border: none;
   text-decoration: none;
   color: var(--secondary-color);
   font-size: large;
