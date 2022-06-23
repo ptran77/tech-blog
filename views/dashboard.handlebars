@@ -1,0 +1,14 @@
+{{#if posts.length}}
+<section>
+  <div class="dashboard-post-list">
+    {{#each posts as |post|}}
+    <div>
+      {{> dashboard-post-info post}}
+    </div>
+    {{/each}}
+  </div>
+</section>
+{{/if}}
+
+
+<a href="/dashboard/new-post" class="new-post">+ New Post</a>
