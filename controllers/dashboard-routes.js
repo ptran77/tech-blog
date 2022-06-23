@@ -52,4 +52,10 @@ router.get('/edit/:id', withAuth, (req, res) => {
     });
 })
 
+// Go to new post page
+router.get('/new-post', withAuth, (req, res) => {
+  res.render('new-post', {loggedIn: true})
+})
+
+
 module.exports = router;
