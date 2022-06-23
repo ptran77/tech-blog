@@ -13,6 +13,9 @@ async function signupFormHandler(event) {
       }),
       headers: { 'Content-Type': 'application/json' }
     });
+
+    document.querySelector('#username-signup').value = "";
+    document.querySelector('#password-signup').value = "";
     
     // check the response status
     if (response.ok) {
@@ -38,6 +41,9 @@ async function loginFormHandler(event) {
       }),
       headers: { 'Content-Type': 'application/json' }
     });
+
+    document.querySelector('#username-login').value = "";
+    document.querySelector('#password-login').value = "";
 
     if (response.ok) {
       document.location.replace('/');
