@@ -128,3 +128,57 @@ main {
   font-size: 1em;
 }
 /* Comment Style End */
+
+/* Login Style Begin */
+.login-form {
+  display: block;
+}
+
+.signup-form {
+  display: none;
+}
+
+.login-form, .signup-form {
+  border: 5px solid var(--primary-color);
+  margin-bottom: .5%;
+}
+
+.login-form h2, .signup-form h2 {
+  margin-top: 0;
+  padding: 1%;
+  background-color: var(--primary-color);
+  color: var(--secondary-color)
+}
+
+.login-form div, .signup-form div{
+  padding: 0 1% 1% 1%;
+}
+
+.login-form div label, .signup-form div label{
+  display: block;
+  font-size: 1.25em;
+}
+
+.login-form div input, .signup-form div input{
+  width: 100%;
+  font-size: 1.2em;
+}
+
+.login-form div button, .signup-form div button{
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 1.25em;
+  padding: 0.5%;
+  border-radius: 15px;
+  transition: background-color .1s;
+}
+
+.login-form div button:hover , .signup-form div button:hover {
+  background-color: var(--tertiary-color);
+}
+
+#go-to-login, #go-to-signup {
+  font-size: 1.25em;
+  color: blue;
+}

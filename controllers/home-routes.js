@@ -30,6 +30,7 @@ router.get('/', (req, res) => {
     .then(dbPostData => {
       const posts = dbPostData.map(post => post.get({ plain: true }));
 
+      // render the homepage
       res.render('homepage', {
         posts,
         loggedIn: req.session.loggedIn
@@ -86,6 +87,17 @@ router.get('/post/:id', (req, res) => {
       console.log(err);
       res.status(500).json(err);
     });
+});
+
+// Login path
+router.get('/login', (req, res) => {
+  // if user is already logged in go to homepage
+  if (req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
+  // else go to login page
+  res.render('login');
 });
 
 module.exports = router;
