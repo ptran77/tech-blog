@@ -25,7 +25,9 @@ To setup the site from your own computer:
 
 ## Usage
 
-Either go the link or run 'npm start' on your computer to use the application.
+Either go the link https://pt-tech-blog-2022.herokuapp.com/
+or run 'npm start' on your computer to use the application.
+
 In the app:
 
 - first signup/login with an username and password under the login tab
@@ -34,3 +36,15 @@ In the app:
 - from the dashboard you can click on one of your posts to edit/delete or you can click new post to create a new post
 
 ## Screenshot
+
+## Page Link
+
+Link: https://pt-tech-blog-2022.herokuapp.com/;
+
+## Questions
+
+Github: [ptran77](https://github.com/ptran77)
+
+[Portfolio](https://ptran77.github.io/professional-portfolio/)
+
+For any questions, contact me at pettran866@gmail.com
