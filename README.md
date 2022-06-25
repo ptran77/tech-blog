@@ -37,6 +37,8 @@ In the app:
 
 ## Screenshot
 
+<img src='./tech-blog.gif' width=500 />
+
 ## Page Link
 
 Link: https://pt-tech-blog-2022.herokuapp.com/;
