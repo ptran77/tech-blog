@@ -1,4 +1,4 @@
-// updating post
+// makes put request to update post 
 async function editFormHandler(event) {
   event.preventDefault();
 
@@ -27,7 +27,7 @@ async function editFormHandler(event) {
   }
 }
 
-// delete post
+// makes a delete request to remove the post from the database
 async function deletePostHandler(event) {
   event.preventDefault();
   const id = window.location.toString().split('/')[

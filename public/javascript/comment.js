@@ -1,3 +1,4 @@
+// makes a post request to save the comment to the database
 async function commentFormHandler(event) {
   event.preventDefault();
 

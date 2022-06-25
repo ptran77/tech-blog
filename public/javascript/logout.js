@@ -1,3 +1,4 @@
+// Makes post request to logout and stop the session
 async function logout() {
   const response = await fetch('/api/users/logout', {
     method: 'post',

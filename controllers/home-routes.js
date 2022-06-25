@@ -34,7 +34,7 @@ router.get('/', (req, res) => {
     });
 });
 
-// get single post
+// get single post page
 router.get('/post/:id', (req, res) => {
   Post.findOne({
     where: {
@@ -81,7 +81,7 @@ router.get('/post/:id', (req, res) => {
     });
 });
 
-// Login path
+// Login page
 router.get('/login', (req, res) => {
   // if user is already logged in go to homepage
   if (req.session.loggedIn) {

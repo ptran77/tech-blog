@@ -1,3 +1,4 @@
+// Makes a post request to create a user and make a logged in sessions
 async function signupFormHandler(event) {
   event.preventDefault();
 
@@ -20,12 +21,14 @@ async function signupFormHandler(event) {
     // check the response status
     if (response.ok) {
       console.log('success');
+      document.location.replace('/');
     } else {
       alert(response.statusText);
     }
   }
 }
 
+// Makes a post request to begin a login session
 async function loginFormHandler(event) {
   event.preventDefault();
 
@@ -54,11 +57,14 @@ async function loginFormHandler(event) {
 }
 
 document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);
-document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
+document.querySelector('.login-form').addEventListener('submit', loginFormHandler); 
+
+// Switches from login to signup
 document.querySelector('#go-to-signup').addEventListener('click', function () {
   document.querySelector('.signup-form').style.display = 'block';
   document.querySelector('.login-form').style.display = 'none';
 })
+// Switches from signup to login
 document.querySelector('#go-to-login').addEventListener('click', function () {
   document.querySelector('.signup-form').style.display = 'none';
   document.querySelector('.login-form').style.display = 'block';

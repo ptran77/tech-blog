@@ -1,3 +1,4 @@
+// makes a post request to the database to save the new post
 async function addFormHandler(event) {
   event.preventDefault();
 
